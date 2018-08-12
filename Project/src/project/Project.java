@@ -5,6 +5,8 @@
  */
 package project;
 
+import java.util.Scanner;
+
 /**
  *
  * @author garet
@@ -19,16 +21,35 @@ public class Project {
     }
     
 }
-//This project has a variable
+// This program is for your name.
 
-class Variable
-{
-    static void main(String[]args)
-    {
-        int value;
+package stringvars;
+
+import java.util.Scanner; 
+
+ class StringVariables {
+    
+    public static void main(String[] args) {
+         
+        Scanner user_input = new Scanner(System.in);
         
-        value = 5;
-        System.out.print("The value is ");
-        System.out.println(value);
+        String first_name;
+        System.out.print("Enter your first name: ");
+        first_name = user_input.next();
+        
+        String middle_name;
+        System.out.print("Enter your middle name: ");
+        middle_name = user_input.next();
+        
+        String last_name;
+        System.out.print("Enter your last name: ");
+        last_name = user_input.next();
+        
+        String full_name;
+        full_name = last_name + "," + first_name + middle_name;
+        
+        System.out.println("You are " + full_name);
+        
     }
+  
 }
